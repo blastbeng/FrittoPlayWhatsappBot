@@ -1,0 +1,11 @@
+---
+version: "3.3"
+services:
+  frittoplay-whatsapp-bot:
+    container_name: frittoplay-whatsapp-bot
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Rome
+    image: "frittoplay-whatsapp-bot:latest"
+    restart: always
